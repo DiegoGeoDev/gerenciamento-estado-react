@@ -10,7 +10,7 @@ yarn create vite
 
 - responder: </br>
 
-  - monitora-pdf-viewer </br>
+  - gerenciamento-estado-react </br>
   - react </br>
   - react-ts </br>
 
@@ -28,11 +28,11 @@ yarn dev
 
 # instalar dependencias
 
-https://axios-http.com/
-https://github.com/remix-run/react-router/blob/main/docs/getting-started/installation.md
-https://github.com/pmndrs/zustand
-https://redux-toolkit.js.org/
-https://v5.reactrouter.com/web/guides/quick-start
+https://axios-http.com/ </br>
+https://github.com/remix-run/react-router/blob/main/docs/getting-started/installation.md </br>
+https://github.com/pmndrs/zustand </br>
+https://redux-toolkit.js.org/ </br>
+https://v5.reactrouter.com/web/guides/quick-start </br>
 
 ```batch
 yarn add axios
