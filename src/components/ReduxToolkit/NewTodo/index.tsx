@@ -14,6 +14,8 @@ export const NewTodo = () => {
 	};
 
 	const onAddTodo = () => {
+		if (input === '') return;
+
 		dispatch(addTodo(input));
 		setInput('');
 	};

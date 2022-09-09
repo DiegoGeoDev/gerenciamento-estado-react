@@ -1,9 +1,8 @@
 import { ChangeEvent, useState } from 'react';
-
-import { useTodoStore } from '../../../stores/zustand/todoStore';
+import { useTodo } from '../../../hooks/contextAPI/useTodo';
 
 export const NewTodo = () => {
-	const addTodo = useTodoStore((state) => state.addTodo);
+	const { addTodo } = useTodo();
 
 	const [input, setInput] = useState<string>('');
 
@@ -12,6 +11,8 @@ export const NewTodo = () => {
 	};
 
 	const onAddTodo = () => {
+		if (input === '') return;
+
 		addTodo(input);
 		setInput('');
 	};

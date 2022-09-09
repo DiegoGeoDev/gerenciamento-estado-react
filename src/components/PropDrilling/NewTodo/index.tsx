@@ -12,6 +12,8 @@ export const NewTodo = ({ addTodo }: NewTodoProps) => {
 	};
 
 	const onAddTodo = () => {
+		if (input === '') return;
+
 		addTodo(input);
 		setInput('');
 	};

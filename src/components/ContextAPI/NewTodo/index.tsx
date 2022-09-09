@@ -11,6 +11,8 @@ export const NewTodo = () => {
 	};
 
 	const onAddTodo = () => {
+		if (input === '') return;
+
 		addTodo(input);
 		setInput('');
 	};
