@@ -1,6 +1,6 @@
-import { NewTodo } from '../../components/Zustand/NewTodo';
-import { Todos } from '../../components/Zustand/Todos';
-import { Toolbar } from '../../components/Zustand/Toolbar';
+import { NewTodo } from '../../components/ContextAPI/NewTodo';
+import { Todos } from '../../components/ContextAPI/Todos';
+import { Toolbar } from '../../components/ContextAPI/Toolbar';
 
 import { TodoProvider } from '../../hooks/contextAPI/useTodo';
 

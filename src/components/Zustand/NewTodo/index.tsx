@@ -1,8 +1,8 @@
 import { ChangeEvent, useState } from 'react';
-import { useTodo } from '../../../hooks/contextAPI/useTodo';
+import { useTodoStore } from '../../../stores/zustand/todoStore';
 
 export const NewTodo = () => {
-	const { addTodo } = useTodo();
+	const addTodo = useTodoStore((state) => state.addTodo);
 
 	const [input, setInput] = useState<string>('');
 

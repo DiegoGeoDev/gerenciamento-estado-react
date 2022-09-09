@@ -1,9 +1,8 @@
-import { useTodo } from '../../../hooks/contextAPI/useTodo';
-
+import { useTodoStore } from '../../../stores/zustand/todoStore';
 import { Todo } from '../Todo';
 
 export const Todos = () => {
-	const { todos } = useTodo();
+	const todos = useTodoStore((state) => state.todos);
 
 	return (
 		<ul className="todo-list">

@@ -1,4 +1,4 @@
-import { useTodo } from '../../../hooks/contextAPI/useTodo';
+import { useTodoStore } from '../../../stores/zustand/todoStore';
 
 type TodoProps = {
 	id: string;
@@ -6,7 +6,7 @@ type TodoProps = {
 };
 
 export const Todo = ({ id, text }: TodoProps) => {
-	const { removeTodo } = useTodo();
+	const removeTodo = useTodoStore((state) => state.removeTodo);
 
 	return (
 		<li>

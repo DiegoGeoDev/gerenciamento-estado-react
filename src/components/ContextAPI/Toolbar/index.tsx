@@ -1,11 +1,11 @@
-import { useTodoStore } from '../../../stores/zustand/todoStore';
+import { useTodo } from '../../../hooks/contextAPI/useTodo';
 
 type ToolbarProps = {
 	title: string;
 };
 
 export const Toolbar = ({ title }: ToolbarProps) => {
-	const removeAll = useTodoStore((state) => state.removeAll);
+	const { removeAll } = useTodo();
 
 	return (
 		<div className="todo-toolbar">
